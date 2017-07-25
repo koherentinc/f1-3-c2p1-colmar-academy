@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    font-family: "Arial";
+    color: black;
+    font-size: 1em;
+  }
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 64px;
+    background-color: white;
+    align-items: center;
+}
+header img {
+    height: 50px;
+    padding-left: 24px;
+  }
+.mobileicons {
+  display: none;
+}
+header h1 {
+  font-size: 140%;
+}
+.greyacademy {
+  color: grey;
+}
+nav {
+    text-align: right;
+    flex-grow: 1;
+}
+nav span {
+    display: inline-block;
+    padding: 16px;
+}
+
+/*Banner: Learn*/
+
+.learn {
+  display: flex;
+  justify-content: flex-start;
+  background-color: lightgrey;
+  align-items: center;
+  color: #566573;
+}
+.learn img {
+  width: 60%;
+  height: 60%;
+  padding: 32px 24px;
+}
+.learn h2 {
+  font-size: 2em;
+  padding-left: 40px;
+}
+.learn p {
+  font-size: 0.5em;
+}
+.learn button {
+  font-size: 0.65em;
+  padding: 8px 72px;
+  background-color: #566573;
+  color: white;
+}
+
+/*Second Section*/
+
+.second {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  align-items: center;
+  color: #black;
+  padding: 32px 24px;
+}
+.practicing img {
+  width: 85%;
+  height: 85%;
+}
+.threephotos {
+  width: 423px;
+  align-items: stretch;
+}
+.threephotos img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+.orientation {
+  display: flex;
+  justify-content: flex-start;
+}
+.campus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.lecture {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #E5E8E8;
+}
+.threephotos p {
+  font-size: 0.8em;
+
+/*Third Section*/
+
+}
+.third {
+  background-color: #E5E8E8;
+}
+.title {
+  text-align: center;
+  padding: 32px 0px 0px 0px;
+}
+.topics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.topics img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.topics h4 {
+  margin: 8px 16px;
+  font-size: 0.8em;
+}
+.topics h3 {
+    margin: 16px;
+}
+.column {
+  margin: 32px;
+  width: 25%;
+}
+.row {
+  background-color: white;
+  height: 270px;
+  margin: 8px;
+}
+
+/*Fourth Section*/
+
+.fourth {
+  background-color: lightgrey;
+}
+.fourthcolumns {
+  display: flex;
+  justify-content: flex-start;
+  background-color: lightgrey;
+  align-items: flex-start;
+  color: #black;
+  width: 100%;
+}
+.reimagine video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.reimagine {
+  width: 80%;
+}
+
+.twophotos img {
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+}
+
+.fisma {
+  display: flex;
+  justify-content: flex-start;
+  background-color: darkgrey;
+}
+.now {
+  display: flex;
+  justify-content: flex-start;
+}
+.twophotos p {
+  font-size: 0.5em;
+}
+
+/*Footer Section*/
+.footer {
+  padding: 60px 0px;
+  background-color: #000;
+  color: #fff;
+}
+
+/*Mobile Site*/
+
+@media only screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        height: 64px;
+        background-color: white;
+        align-items: center;
+    }
+    header h1 {
+      display: none;
+    }
+    header nav {
+      display: none;
+    }
+    .mobileicons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .learn img {
+      display: none;
+    }
+    .practicing {
+      display: none;
+    }
+    .topics {
+      display: block;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    .third h4 {
+      display: none;
+    }
+    .third img {
+      display: none;
+    }
+    .topics h4 {
+      margin: auto;
+      font-size: 0.8em;
+    }
+    .topics h3 {
+        padding: 16px
+      }
+      .column {
+        margin: auto;
+        width: 100%;
+      }
+      .row {
+        background-color: grey;
+        height: auto;
+        margin: 4px;
+      }
+      .fourthcolumns h4 {
+        display: none;
+      }
+      .fourthcolumns h3 {
+        display: none;
+      }
+      .fourthcolumns p {
+        display: none;
+      }
+      .reimagine {
+        width: auto;
+      }
